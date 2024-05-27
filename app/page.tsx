@@ -1,3 +1,4 @@
+import Searchbar from "@/components/Searchbar";
 import Image from "next/image";
 
 export default function Home() {
@@ -24,16 +25,7 @@ export default function Home() {
             Powerful, self-serve product and growth analytics to help you
             convert, engage, and retain more
           </p>
-          <form className="flex gap-4 mt-12">
-            <input
-              type="text"
-              className="searchbar-input"
-              placeholder="Enter Product link"
-            />
-            <button className="searchbar-btn" type="submit">
-              Search
-            </button>
-          </form>
+          <Searchbar />
         </section>
       </section>
       <section className="hero-carousel">
